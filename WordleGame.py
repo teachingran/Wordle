@@ -49,17 +49,6 @@ class WordleGame():
     def PrintLettersStatus(self, letter=None):
         pf = PrintFormatter()
         pf.PrinPrintLettersStatus()
-#        self.__FormatPrintLettersStatus(LetterStatus.MATCH)
-#        self.__FormatPrintLettersStatus(LetterStatus.EXIST_WRONG_LOCATION)
-#        self.__FormatPrintLettersStatus(LetterStatus.NOT_EXIST)
-#        self.__FormatPrintLettersStatus(LetterStatus.NOT_PICKED_YET)
-
-    
-#    def __FormatPrintLettersStatus(self, status):
-#        print (str(status),":")
-#        selecteds = {k: v for k, v in self.letters.items() if v == status}
-#        print(list(selecteds.keys()))
-
 
 
     def Print(self, word, printAllLetters=True, printByType = False):
@@ -82,14 +71,14 @@ class WordleGame():
 
 
 def TestSingleWordleGame():
-    game = WordleGame("abcde")
+    game = WordleGame("abcdefg")
     #game.PrintLettersStatus()
     game.Play()
 
         
     
 
-TestSingleWordleGame()
+#TestSingleWordleGame()
 
 
         
